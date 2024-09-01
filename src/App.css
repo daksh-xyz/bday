@@ -126,6 +126,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: 99%;
     z-index: 1;
   }
 
