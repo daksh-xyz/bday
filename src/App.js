@@ -5,6 +5,7 @@ import './App.css';
 import CountdownTimer from './CountdownTimer';
 import Hearts from './Hearts';
 import Confetti from './confetti';
+import Instructions from './Instructions';
 
 function App() {
   // State to determine whether to show confetti
@@ -20,11 +21,10 @@ function App() {
 
   return (
     <div className="App">
+      <div className='InstructionDiv'><Instructions /></div>
       <header className="App-header">
-        {/* Pass handleCountdownEnd to CountdownTimer */}
         <CountdownTimer targetDate={targetDate} onCountdownEnd={handleCountdownEnd} />
       </header>
-      {/* Only show Confetti when showConfetti is true */}
       {showConfetti && <Confetti />}
       <Hearts />
     </div>

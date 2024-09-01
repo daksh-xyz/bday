@@ -58,9 +58,9 @@ const CountdownTimer = ({ targetDate, onCountdownEnd }) => {
   return (
     <div className="countdown-timer">
       <div className="digits">{formatTime(timeRemaining.days)}</div>
-      <div className="dots">:</div>
+      <div>:</div>
       <div className="digits">{formatTime(timeRemaining.hours)}</div>
-      <div className="dots">:</div>
+      <div>:</div>
       <div className="digits">{formatTime(timeRemaining.minutes)}</div>
       <div className="dots">:</div>
       <div className="digits">{formatTime(timeRemaining.seconds)}</div>
