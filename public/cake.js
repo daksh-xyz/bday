@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Redirect to App.js if all candles are blown out and clicked
     if (activeCandles === 0 && clicked === true) {
-      window.location.href = "../src/App.js";
+      window.location.href = "../src/Memories.js";
     }
   }
 
@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let average = sum / bufferLength;
 
     // Lower threshold for higher sensitivity
-    return average > 20;  // Reduced from 40 to 20 for more sensitivity
+    return average > 80;  // Reduced from 40 to 20 for more sensitivity
   }
 
   function blowOutCandles() {
@@ -81,10 +81,10 @@ document.addEventListener("DOMContentLoaded", function () {
         microphone.connect(analyser);
 
         // Set fftSize to 128 for quicker responsiveness
-        analyser.fftSize = 128;  // Reduced from 256 for more sensitivity
+        analyser.fftSize = 256;  // Reduced from 256 for more sensitivity
 
         // Decrease the interval for more frequent checks
-        setInterval(blowOutCandles, 100);  // Reduced from 200ms to 100ms
+        setInterval(blowOutCandles, 200);  // Reduced from 200ms to 100ms
       })
       .catch(function (err) {
         console.log("Unable to access microphone: " + err);
