@@ -12,7 +12,7 @@ function App() {
   const [showConfetti, setShowConfetti] = useState(false);
 
   // Set the target date and time you want to count down to
-  const targetDate = "2024-09-07T23:29:59";
+  const targetDate = "2024-09-06T23:29:59";
 
   // Function to handle the end of the countdown
   const handleCountdownEnd = () => {
