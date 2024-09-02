@@ -1,7 +1,7 @@
 import './Instructions.css'
 const Instructions = () => {
     const InstructionsButton = () => {
-      alert("When the timer strikes 0 make sure surroundings are silent or the experience will be ruined! and I will be sad :(")
+      alert("Step1: Turn the fan off like you would with a real cake :)\nStep2: Stop talking if the mic is really sensitive\nStep3: Click on the cake to add candles\nStep4: Blow!")
     }
     return(
       <button className="InstructionsButton" onClick={InstructionsButton}>Instructions</button>

@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Redirect to App.js if all candles are blown out and clicked
     if (activeCandles === 0 && clicked === true) {
-      window.location.href = "../src/Memories.js";
+      window.location.href = "https://janhvi-gallery.vercel.app";
     }
   }
 
